@@ -27,3 +27,32 @@ C:\Users\DjanerChoban\source\repos\Library\Library\obj\Debug\net5.0\Library.dll
 C:\Users\DjanerChoban\source\repos\Library\Library\obj\Debug\net5.0\ref\Library.dll
 C:\Users\DjanerChoban\source\repos\Library\Library\obj\Debug\net5.0\Library.pdb
 C:\Users\DjanerChoban\source\repos\Library\Library\obj\Debug\net5.0\Library.genruntimeconfig.cache
+D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\appsettings.Development.json
+D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\appsettings.json
+D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Library.exe
+D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Library.deps.json
+D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Library.runtimeconfig.json
+D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Library.runtimeconfig.dev.json
+D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Library.dll
+D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\ref\Library.dll
+D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Library.pdb
+D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.csproj.AssemblyReference.cache
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.GeneratedMSBuildEditorConfig.editorconfig
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.AssemblyInfoInputs.cache
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.AssemblyInfo.cs
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.csproj.CoreCompileInputs.cache
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.MvcApplicationPartsAssemblyInfo.cs
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.MvcApplicationPartsAssemblyInfo.cache
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\staticwebassets\Library.StaticWebAssets.Manifest.cache
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\staticwebassets\Library.StaticWebAssets.xml
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\scopedcss\bundle\Library.styles.css
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.RazorTargetAssemblyInfo.cache
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.csproj.CopyComplete
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.dll
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\ref\Library.dll
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.pdb
+D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.genruntimeconfig.cache

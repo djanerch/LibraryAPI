@@ -198,11 +198,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Library Web API\\Library\\Library.csproj",
+      "projectUniqueName": "D:\\Library Web API\\LibraryApi\\Library\\Library.csproj",
       "projectName": "Library",
-      "projectPath": "D:\\Library Web API\\Library\\Library.csproj",
+      "projectPath": "D:\\Library Web API\\LibraryApi\\Library\\Library.csproj",
       "packagesPath": "C:\\Users\\DjanerChoban\\.nuget\\packages\\",
-      "outputPath": "D:\\Library Web API\\Library\\obj\\",
+      "outputPath": "D:\\Library Web API\\LibraryApi\\Library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DjanerChoban\\AppData\\Roaming\\NuGet\\NuGet.Config",
