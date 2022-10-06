@@ -1,0 +1,15 @@
+D:\Library Web API\LibraryApi\Library.Data\bin\Debug\net5.0\Library.Data.deps.json
+D:\Library Web API\LibraryApi\Library.Data\bin\Debug\net5.0\Library.Data.runtimeconfig.json
+D:\Library Web API\LibraryApi\Library.Data\bin\Debug\net5.0\Library.Data.runtimeconfig.dev.json
+D:\Library Web API\LibraryApi\Library.Data\bin\Debug\net5.0\Library.Data.dll
+D:\Library Web API\LibraryApi\Library.Data\bin\Debug\net5.0\ref\Library.Data.dll
+D:\Library Web API\LibraryApi\Library.Data\bin\Debug\net5.0\Library.Data.pdb
+D:\Library Web API\LibraryApi\Library.Data\obj\Debug\net5.0\Library.Data.csproj.AssemblyReference.cache
+D:\Library Web API\LibraryApi\Library.Data\obj\Debug\net5.0\Library.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Library Web API\LibraryApi\Library.Data\obj\Debug\net5.0\Library.Data.AssemblyInfoInputs.cache
+D:\Library Web API\LibraryApi\Library.Data\obj\Debug\net5.0\Library.Data.AssemblyInfo.cs
+D:\Library Web API\LibraryApi\Library.Data\obj\Debug\net5.0\Library.Data.csproj.CoreCompileInputs.cache
+D:\Library Web API\LibraryApi\Library.Data\obj\Debug\net5.0\Library.Data.dll
+D:\Library Web API\LibraryApi\Library.Data\obj\Debug\net5.0\ref\Library.Data.dll
+D:\Library Web API\LibraryApi\Library.Data\obj\Debug\net5.0\Library.Data.pdb
+D:\Library Web API\LibraryApi\Library.Data\obj\Debug\net5.0\Library.Data.genruntimeconfig.cache
