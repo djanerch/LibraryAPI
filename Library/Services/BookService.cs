@@ -1,11 +1,10 @@
 ﻿using Library.Data;
 using Library.Data.Models;
 using Library.Dtos;
+using Library.Models;
 using Library.Services.Contracts;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Library.Services
 {
@@ -37,6 +36,19 @@ namespace Library.Services
             context.SaveChanges();
 
             return true;
+        }
+
+        public IEnumerable<BookApiModel> AllBooks()
+        {
+            return context
+                .Books
+                .Select(x => new BookApiModel
+                {
+                    Header = x.Header,
+                    Description = x.Description,
+                    Pages = x.Pages
+                })
+                .ToList();
         }
     }
 }
