@@ -1,4 +1,4 @@
-﻿namespace Library
+﻿namespace Library.Api
 {
     public class JsonStatus
     {

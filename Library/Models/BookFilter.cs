@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Library.Models
+﻿namespace Library.Api.Models
 {
     public class BookFilter
     {

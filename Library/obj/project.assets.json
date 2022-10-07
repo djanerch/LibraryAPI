@@ -5966,9 +5966,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Library Web API\\LibraryApi\\Library\\Library.csproj",
-      "projectName": "Library",
-      "projectPath": "D:\\Library Web API\\LibraryApi\\Library\\Library.csproj",
+      "projectUniqueName": "D:\\Library Web API\\LibraryApi\\Library\\Library.Api.csproj",
+      "projectName": "Library.Api",
+      "projectPath": "D:\\Library Web API\\LibraryApi\\Library\\Library.Api.csproj",
       "packagesPath": "C:\\Users\\DjanerChoban\\.nuget\\packages\\",
       "outputPath": "D:\\Library Web API\\LibraryApi\\Library\\obj\\",
       "projectStyle": "PackageReference",

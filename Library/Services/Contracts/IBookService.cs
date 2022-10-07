@@ -1,8 +1,8 @@
-﻿using Library.Dtos;
-using Library.Models;
+﻿using Library.Api.Dtos;
+using Library.Api.Models;
 using System.Collections.Generic;
 
-namespace Library.Services.Contracts
+namespace Library.Api.Services.Contracts
 {
     public interface IBookService
     {

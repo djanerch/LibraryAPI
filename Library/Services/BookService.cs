@@ -1,12 +1,12 @@
-﻿using Library.Data;
+﻿using Library.Api.Dtos;
+using Library.Api.Models;
+using Library.Api.Services.Contracts;
+using Library.Data;
 using Library.Data.Models;
-using Library.Dtos;
-using Library.Models;
-using Library.Services.Contracts;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Library.Services
+namespace Library.Api.Services
 {
     public class BookService : IBookService
     {

@@ -1,9 +1,9 @@
-﻿using Library.Models;
-using Library.Services.Contracts;
+﻿using Library.Api.Models;
+using Library.Api.Services.Contracts;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
-namespace Library.Controllers
+namespace Library.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

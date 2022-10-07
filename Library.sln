@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32602.291
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "Library\Library.csproj", "{39E88D90-27F0-4203-9257-F7E1757ADEBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Api", "Library\Library.Api.csproj", "{39E88D90-27F0-4203-9257-F7E1757ADEBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Data", "Library.Data\Library.Data.csproj", "{241C574E-4698-43BE-9DA9-75CE2B29D676}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Data", "Library.Data\Library.Data.csproj", "{241C574E-4698-43BE-9DA9-75CE2B29D676}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

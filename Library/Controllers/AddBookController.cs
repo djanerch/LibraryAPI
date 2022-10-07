@@ -1,8 +1,8 @@
-﻿using Library.Dtos;
-using Library.Services.Contracts;
+﻿using Library.Api.Dtos;
+using Library.Api.Services.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Library.Controllers
+namespace Library.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

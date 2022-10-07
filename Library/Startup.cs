@@ -1,6 +1,6 @@
+using Library.Api.Services;
+using Library.Api.Services.Contracts;
 using Library.Data;
-using Library.Services;
-using Library.Services.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
-namespace Library
+namespace Library.Api
 {
     public class Startup
     {
