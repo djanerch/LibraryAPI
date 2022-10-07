@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jE3p0VVwiwC6m5NzFRZxO8UWvMb+QlnDS7mxFDcgqiPLYK9ZJIvbH7NT1ALomvB3CgyaTaRqaliTkcdqViBeXA==",
+  "dgSpecHash": "InVmK+vlFGEQWFPH/2ppPbkkErXp4XpjOvkUskSvVo7B8tSufE21ynqWaIcdyOcZ75TKzGq+TLrO29pfpMSqUQ==",
   "success": true,
-  "projectFilePath": "D:\\Library Web API\\LibraryApi\\Library\\Library.Api.csproj",
+  "projectFilePath": "D:\\Library Web API\\LibraryAPI\\Library\\Library.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DjanerChoban\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\DjanerChoban\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

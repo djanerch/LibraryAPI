@@ -5966,11 +5966,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Library Web API\\LibraryApi\\Library\\Library.Api.csproj",
+      "projectUniqueName": "D:\\Library Web API\\LibraryAPI\\Library\\Library.Api.csproj",
       "projectName": "Library.Api",
-      "projectPath": "D:\\Library Web API\\LibraryApi\\Library\\Library.Api.csproj",
+      "projectPath": "D:\\Library Web API\\LibraryAPI\\Library\\Library.Api.csproj",
       "packagesPath": "C:\\Users\\DjanerChoban\\.nuget\\packages\\",
-      "outputPath": "D:\\Library Web API\\LibraryApi\\Library\\obj\\",
+      "outputPath": "D:\\Library Web API\\LibraryAPI\\Library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DjanerChoban\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5987,8 +5987,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Library Web API\\LibraryApi\\Library.Data\\Library.Data.csproj": {
-              "projectPath": "D:\\Library Web API\\LibraryApi\\Library.Data\\Library.Data.csproj"
+            "D:\\Library Web API\\LibraryAPI\\Library.Data\\Library.Data.csproj": {
+              "projectPath": "D:\\Library Web API\\LibraryAPI\\Library.Data\\Library.Data.csproj"
             }
           }
         }
