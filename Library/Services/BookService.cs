@@ -38,10 +38,12 @@ namespace Library.Services
             return true;
         }
 
-        public IEnumerable<BookApiModel> AllBooks()
+        public IEnumerable<BookApiModel> AllBooks(BookFilter filter)
         {
             return context
                 .Books
+                .Where(x => x.Pages >= filter.FromPages && x.Pages <= filter.ToPages 
+                && x.Header.Contains(filter.Header) && x.IsFree == filter.IsFree)
                 .Select(x => new BookApiModel
                 {
                     Header = x.Header,
