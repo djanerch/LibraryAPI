@@ -22,7 +22,6 @@ D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Microsoft.IdentityModel.P
 D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Microsoft.OpenApi.dll
-D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -61,3 +60,4 @@ D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.Api.dll
 D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\ref\Library.Api.dll
 D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.Api.pdb
 D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.Api.genruntimeconfig.cache
+D:\Library Web API\LibraryAPI\Library\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
