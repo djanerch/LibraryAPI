@@ -61,3 +61,4 @@ D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\ref\Library.Api.dll
 D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.Api.pdb
 D:\Library Web API\LibraryApi\Library\obj\Debug\net5.0\Library.Api.genruntimeconfig.cache
 D:\Library Web API\LibraryAPI\Library\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Library Web API\LibraryApi\Library\bin\Debug\net5.0\Microsoft.IdentityModel.Abstractions.dll

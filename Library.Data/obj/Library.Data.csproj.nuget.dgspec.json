@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Library Web API\\LibraryAPI\\Library.Data\\Library.Data.csproj": {}
+    "D:\\Library Web API\\LibraryApi\\Library.Data\\Library.Data.csproj": {}
   },
   "projects": {
-    "D:\\Library Web API\\LibraryAPI\\Library.Data\\Library.Data.csproj": {
+    "D:\\Library Web API\\LibraryApi\\Library.Data\\Library.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Library Web API\\LibraryAPI\\Library.Data\\Library.Data.csproj",
+        "projectUniqueName": "D:\\Library Web API\\LibraryApi\\Library.Data\\Library.Data.csproj",
         "projectName": "Library.Data",
-        "projectPath": "D:\\Library Web API\\LibraryAPI\\Library.Data\\Library.Data.csproj",
+        "projectPath": "D:\\Library Web API\\LibraryApi\\Library.Data\\Library.Data.csproj",
         "packagesPath": "C:\\Users\\DjanerChoban\\.nuget\\packages\\",
-        "outputPath": "D:\\Library Web API\\LibraryAPI\\Library.Data\\obj\\",
+        "outputPath": "D:\\Library Web API\\LibraryApi\\Library.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DjanerChoban\\AppData\\Roaming\\NuGet\\NuGet.Config",
