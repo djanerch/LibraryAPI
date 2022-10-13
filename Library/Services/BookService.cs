@@ -51,15 +51,39 @@ namespace Library.Api.Services
 
         public string RemoveBookByName(string header)
         {
-            if (context.Books.FirstOrDefault(x => x.Header == header) != null)
+            var book = context.Books.FirstOrDefault(x => x.Header == header);
+            if (book != null)
             {
-                context.Books.Remove(context.Books.FirstOrDefault(x => x.Header == header));
+                context.Books.Remove(book);
 
                 context.SaveChanges();
 
                 return $"Book with header: {header} is removed from library";
             }
             return "Book does't exist in library.";
+        }
+
+        public string GetBookByName(string header, UserModel user)
+        {
+            var book = context.Books.FirstOrDefault(x => x.Header == header);
+            if (book != null)
+            {
+                if (book.IsFree == false)
+                {
+                    return "This book is busy at now.";
+                }
+
+                var dbUser = context.Users.FirstOrDefault(x => x.Name == user.Username && x.Email == user.EmailAddress);
+
+                dbUser.MyBooks.Add(book);
+
+                book.IsFree = false;
+
+                context.SaveChanges();
+
+                return $"Book with header: {header} is added to your collection.";
+            }
+            return "You cannot get this book!";
         }
     }
 }

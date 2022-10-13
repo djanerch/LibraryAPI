@@ -19,7 +19,7 @@ namespace Library.Api.Controllers
 
         [HttpPost]
         [Authorize]
-        public IActionResult RemoveBook(RemoveBook book)
+        public IActionResult RemoveBook(BookWithHeader book)
         {
             if (userService.GetCurrentUser(HttpContext).Role == "Admin")
             {
