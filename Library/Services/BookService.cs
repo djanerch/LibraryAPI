@@ -15,11 +15,11 @@ namespace Library.Api.Services
         {
             context = _context;
         }
-        public bool AddNewBook(BookDto book)
+        public void AddNewBook(BookDto book)
         {
             if (context.Books.FirstOrDefault(x=> x.Header == book.Header) != null)
             {
-                return false;
+                return;
             }
 
             Book newBook = new Book()
@@ -27,15 +27,12 @@ namespace Library.Api.Services
                 Header = book.Header,
                 Description = book.Description,
                 Pages = book.Pages,
-                Rating = book.Rating,
-                IsFree = book.IsFree
+                Rating = book.Rating
             };
 
             context.Books.Add(newBook);
 
             context.SaveChanges();
-
-            return true;
         }
 
         public IEnumerable<BookApiModel> AllBooks(BookFilter filter)

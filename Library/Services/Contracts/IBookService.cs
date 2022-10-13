@@ -6,7 +6,7 @@ namespace Library.Api.Services.Contracts
 {
     public interface IBookService
     {
-        bool AddNewBook(BookDto book);
+        void AddNewBook(BookDto book);
         IEnumerable<BookApiModel> AllBooks(BookFilter filter);
     }
 }
