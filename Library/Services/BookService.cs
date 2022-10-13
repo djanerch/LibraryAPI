@@ -63,7 +63,7 @@ namespace Library.Api.Services
             return "Book does't exist in library.";
         }
 
-        public string GetBookByName(string header, UserModel user)
+        public string TakeBookByName(string header, UserModel user)
         {
             var book = context.Books.FirstOrDefault(x => x.Header == header);
             if (book != null)

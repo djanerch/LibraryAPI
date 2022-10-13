@@ -12,11 +12,11 @@ namespace Library.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class GetBookController : ControllerBase
+    public class TakeBookController : ControllerBase
     {
         private IBookService bookService;
         private IUserService userService;
-        public GetBookController(IBookService bookService, IUserService userService)
+        public TakeBookController(IBookService bookService, IUserService userService)
         {
             this.bookService = bookService;
             this.userService = userService;
@@ -24,12 +24,12 @@ namespace Library.Api.Controllers
 
         [Authorize]
         [HttpPost]
-        public IActionResult GetBook(BookWithHeader book)
+        public IActionResult TakeBook(BookWithHeader book)
         {
             var user = userService.GetCurrentUser(HttpContext);
             if (userService.GetCurrentUser(HttpContext).Role == "Reader")
             {
-                string result = bookService.GetBookByName(book.Header, user);
+                string result = bookService.TakeBookByName(book.Header, user);
                 return Content(result);
             }
             return Content("You cannot get this book.");

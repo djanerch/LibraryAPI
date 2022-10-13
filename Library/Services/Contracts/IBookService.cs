@@ -8,6 +8,6 @@ namespace Library.Api.Services.Contracts
         void AddNewBook(BookDto book);
         IEnumerable<BookApiModel> AllBooks(BookFilter filter);
         string RemoveBookByName(string header);
-        string GetBookByName(string header, UserModel user);
+        string TakeBookByName(string header, UserModel user);
     }
 }
