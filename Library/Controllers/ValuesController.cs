@@ -1,8 +1,6 @@
-﻿using Library.Api.Models;
+﻿using Library.Api.Services.Contracts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
-using System.Security.Claims;
 
 namespace Library.Controllers
 {
@@ -10,11 +8,17 @@ namespace Library.Controllers
     [ApiController]
     public class ValuesController : Controller
     {
+        private IUserService userService;
+        public ValuesController(IUserService userService)
+        {
+            this.userService = userService;
+        }
+
         [HttpGet("Admins")]
         [Authorize]
         public IActionResult AdminsEndpoint()
         {
-            var currentUser = GetCurrentUser();
+            var currentUser = userService.GetCurrentUser(HttpContext);
 
             return Ok($"Hi {currentUser.Username}, you are in private property!");
         }
@@ -23,22 +27,6 @@ namespace Library.Controllers
         public IActionResult Public()
         {
             return Ok("Hi, you are on public property!");
-        }
-        private UserModel GetCurrentUser()
-        {
-            var identity = HttpContext.User.Identity as ClaimsIdentity;
-
-            if (identity != null)
-            {
-                var userClaims = identity.Claims;
-
-                return new UserModel
-                {
-                    Username = userClaims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value,
-                    EmailAddress = userClaims.FirstOrDefault(x => x.Type == ClaimTypes.Email)?.Value
-                };
-            }
-            return null;
         }
     }
 }

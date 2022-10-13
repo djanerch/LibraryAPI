@@ -37,6 +37,8 @@ namespace Library.Api
                   Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddTransient<IBookService, BookService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<ILoginService, LoginService>();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                .AddJwtBearer(options =>

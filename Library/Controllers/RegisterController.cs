@@ -2,12 +2,8 @@
 using Library.Data;
 using Library.Data.Models;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Library.Api.Controllers
 {
@@ -42,7 +38,8 @@ namespace Library.Api.Controllers
             {
                 Name = registerModel.Username,
                 Email = registerModel.Email,
-                Password = Hash.sha256(registerModel.Password)
+                Password = Hash.sha256(registerModel.Password),
+                Role = "Reader"
             };
 
             context.Users.Add(user);
