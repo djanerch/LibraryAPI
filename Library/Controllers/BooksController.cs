@@ -15,7 +15,7 @@ namespace Library.Api.Controllers
             service = _service;
         }
         [HttpGet]
-        public IEnumerable<BookApiModel> Get(string header = "", bool isFree = true, int fromPages = 0, int toPages = 400)
+        public IEnumerable<BookApiModel> GetBooks(string header = "", bool isFree = true, int fromPages = 0, int toPages = 400)
         {
             BookFilter filter = new BookFilter()
             {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Library.Api.Dtos
+namespace Library.Api.Models
 {
     public class BookDto
     {
@@ -12,6 +12,5 @@ namespace Library.Api.Dtos
         public string Description { get; set; }
         public int Pages { get; set; }
         public int Rating { get; set; }
-        public bool IsFree { get; set; } = true;
     }
 }

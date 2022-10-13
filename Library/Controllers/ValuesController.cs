@@ -24,7 +24,7 @@ namespace Library.Controllers
         }
 
         [HttpGet("Public")]
-        public IActionResult Public()
+        public IActionResult PublicEnpoint()
         {
             return Ok("Hi, you are on public property!");
         }

@@ -1,5 +1,4 @@
-﻿using Library.Api.Dtos;
-using Library.Api.Models;
+﻿using Library.Api.Models;
 using Library.Api.Services.Contracts;
 using Library.Data;
 using Library.Data.Models;
@@ -48,6 +47,19 @@ namespace Library.Api.Services
                     Pages = x.Pages
                 })
                 .ToList();
+        }
+
+        public string RemoveBookByName(string header)
+        {
+            if (context.Books.FirstOrDefault(x => x.Header == header) != null)
+            {
+                context.Books.Remove(context.Books.FirstOrDefault(x => x.Header == header));
+
+                context.SaveChanges();
+
+                return $"Book with header: {header} is removed from library";
+            }
+            return "Book does't exist in library.";
         }
     }
 }

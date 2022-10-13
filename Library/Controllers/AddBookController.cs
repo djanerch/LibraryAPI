@@ -1,4 +1,4 @@
-﻿using Library.Api.Dtos;
+﻿using Library.Api.Models;
 using Library.Api.Services.Contracts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -19,7 +19,7 @@ namespace Library.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post(BookDto book)
+        public IActionResult AddBook(BookDto book)
         {
             if (!ModelState.IsValid)
             {

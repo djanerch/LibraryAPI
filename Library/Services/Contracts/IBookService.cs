@@ -1,5 +1,4 @@
-﻿using Library.Api.Dtos;
-using Library.Api.Models;
+﻿using Library.Api.Models;
 using System.Collections.Generic;
 
 namespace Library.Api.Services.Contracts
@@ -8,5 +7,6 @@ namespace Library.Api.Services.Contracts
     {
         void AddNewBook(BookDto book);
         IEnumerable<BookApiModel> AllBooks(BookFilter filter);
+        string RemoveBookByName(string header);
     }
 }
