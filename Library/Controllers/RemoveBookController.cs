@@ -24,6 +24,7 @@ namespace Library.Api.Controllers
             if (userService.GetCurrentUser(HttpContext).Role == "Admin")
             {
                 string result = bookService.RemoveBookByName(book.Header);
+                bookService.CheckBooks();
                 return Content(result);
             }
             return Content("You cannot remove book.");

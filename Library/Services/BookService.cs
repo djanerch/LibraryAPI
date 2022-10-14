@@ -98,7 +98,7 @@ namespace Library.Api.Services
 
         public IEnumerable<BookWithReaderId> CheckBooks()
         {
-            var list = context.Books.Where(x => x.IsFree == true && x.LastDateForGiveBack < DateTime.Now);
+            var list = context.Books.Where(x => x.IsFree == false && x.LastDateForGiveBack < DateTime.Now).ToList();
 
             if (list.Count() == 0)
             {
@@ -116,7 +116,7 @@ namespace Library.Api.Services
                 IsFree = x.IsFree,
                 LastDateForGiveBack = x.LastDateForGiveBack,
                 Overdue = x.Overdue,
-                UserName = x.User.Name
+                UserName = context.Users.FirstOrDefault(s => x.UserId == s.Id).Name
             });
 
             return booksWithOverdue;

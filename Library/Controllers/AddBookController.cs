@@ -29,6 +29,7 @@ namespace Library.Api.Controllers
             else if (userService.GetCurrentUser(HttpContext).Role == "Admin")
             {
                 bookService.AddNewBook(book);
+                bookService.CheckBooks();
                 return Ok("New book succesfully added!");
             }
             return Content("You cannot add book.");
