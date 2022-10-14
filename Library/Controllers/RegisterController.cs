@@ -1,4 +1,5 @@
 ﻿using Library.Api.Models;
+using Library.Api.Services.Contracts;
 using Library.Data;
 using Library.Data.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -11,42 +12,17 @@ namespace Library.Api.Controllers
     [ApiController]
     public class RegisterController : ControllerBase
     {
-        private LibraryDbContext context;
+        private IRegisterService service;
 
-        public RegisterController(LibraryDbContext context)
+        public RegisterController(IRegisterService service)
         {
-            this.context = context;
+            this.service = service;
         }
         [AllowAnonymous]
         [HttpPost]
         public IActionResult Register(RegisterModel registerModel)
         {
-            if (context.Users.FirstOrDefault(x => x.Name == registerModel.Username) != null)
-            {
-                return Content("Invalid data!Try again...");
-            }
-            else if (context.Users.FirstOrDefault(x => x.Email == registerModel.Email) != null)
-            {
-                return Content("Invalid data!Try again...");
-            }
-            else if (registerModel.Password.Length <= 4)
-            {
-                return Content("Invalid data!Try again...");
-            }
-
-            var user = new User()
-            {
-                Name = registerModel.Username,
-                Email = registerModel.Email,
-                Password = Hash.sha256(registerModel.Password),
-                Role = "Reader"
-            };
-
-            context.Users.Add(user);
-
-            context.SaveChanges();
-
-            return Ok($"Hi {registerModel.Username}! You succesfully created account.");
+            return Content(service.Register(registerModel));
         }
     }
 }

@@ -91,7 +91,7 @@ namespace Library.Api.Services
 
         public IEnumerable<BookWithReaderId> CheckBooks()
         {
-            var list = context.Books.Where(x => x.IsFree != true && x.LastDateForGiveBack < DateTime.Now);
+            var list = context.Books.Where(x => x.IsFree == true && x.LastDateForGiveBack < DateTime.Now);
 
             if (list.Count() == 0)
             {

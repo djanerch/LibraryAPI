@@ -39,6 +39,7 @@ namespace Library.Api
             services.AddTransient<IBookService, BookService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<ILoginService, LoginService>();
+            services.AddTransient<IRegisterService, RegisterService>();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                .AddJwtBearer(options =>
