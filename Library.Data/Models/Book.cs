@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Library.Data.Models
 {
@@ -13,5 +15,10 @@ namespace Library.Data.Models
         public int Pages { get; set; }
         public int Rating { get; set; }
         public bool IsFree { get; set; } = true;
+        public DateTime LastDateForGiveBack { get; set; }
+        public bool Overdue { get; set; } = false;
+        public int UserId { get; set; }
+        [ForeignKey(nameof(UserId))]
+        public User User { get; set; }
     }
 }

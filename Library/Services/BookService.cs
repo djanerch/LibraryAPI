@@ -2,6 +2,7 @@
 using Library.Api.Services.Contracts;
 using Library.Data;
 using Library.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -79,11 +80,39 @@ namespace Library.Api.Services
 
                 book.IsFree = false;
 
+                book.LastDateForGiveBack = DateTime.Now.AddDays(90);
+
                 context.SaveChanges();
 
                 return $"Book with header: {header} is added to your collection.";
             }
             return "You cannot get this book!";
+        }
+
+        public IEnumerable<BookWithReaderId> CheckBooks()
+        {
+            var list = context.Books.Where(x => x.IsFree != true && x.LastDateForGiveBack < DateTime.Now);
+
+            if (list.Count() == 0)
+            {
+                return null;
+            }
+
+            foreach (var item in list)
+            {
+                item.Overdue = true;
+            }
+
+            var booksWithOverdue = list.Select(x => new BookWithReaderId()
+            {
+                Header = x.Header,
+                IsFree = x.IsFree,
+                LastDateForGiveBack = x.LastDateForGiveBack,
+                Overdue = x.Overdue,
+                UserName = x.User.Name
+            });
+
+            return booksWithOverdue;
         }
     }
 }

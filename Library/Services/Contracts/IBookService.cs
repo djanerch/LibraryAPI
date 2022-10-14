@@ -9,5 +9,6 @@ namespace Library.Api.Services.Contracts
         IEnumerable<BookApiModel> AllBooks(BookFilter filter);
         string RemoveBookByName(string header);
         string TakeBookByName(string header, UserModel user);
+        IEnumerable<BookWithReaderId> CheckBooks();
     }
 }

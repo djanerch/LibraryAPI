@@ -18,6 +18,7 @@ namespace Library.Api.Controllers
             this.userService = userService;
         }
 
+        [Authorize]
         [HttpPost]
         public IActionResult AddBook(BookDto book)
         {
