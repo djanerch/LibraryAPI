@@ -30,6 +30,8 @@ namespace Library.Api.Services
                 Rating = book.Rating
             };
 
+            newBook.UserId = null;
+
             context.Books.Add(newBook);
 
             context.SaveChanges();
@@ -76,7 +78,12 @@ namespace Library.Api.Services
 
                 var dbUser = context.Users.FirstOrDefault(x => x.Name == user.Username && x.Email == user.EmailAddress);
 
-                dbUser.MyBooks.Add(book);
+                if (context.Books.Where(x => x.UserId == dbUser.Id).Count() >= 3)
+                {
+                    return "You can't get more than 3 books at one time";
+                }
+
+                dbUser.Books.Add(book);
 
                 book.IsFree = false;
 

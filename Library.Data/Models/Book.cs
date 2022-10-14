@@ -17,7 +17,7 @@ namespace Library.Data.Models
         public bool IsFree { get; set; } = true;
         public DateTime LastDateForGiveBack { get; set; }
         public bool Overdue { get; set; } = false;
-        public int UserId { get; set; }
+        public int? UserId { get; set; }
         [ForeignKey(nameof(UserId))]
         public User User { get; set; }
     }

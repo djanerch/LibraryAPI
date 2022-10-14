@@ -5,6 +5,10 @@ namespace Library.Data.Models
 {
     public class User
     {
+        public User()
+        {
+            Books = new List<Book>();
+        }
         [Key]
         public int Id { get; set; }
         [StringLength(maximumLength: 90)]
@@ -14,6 +18,6 @@ namespace Library.Data.Models
         public string Email { get; set; }
         public string Password { get; set; }
         public string Role { get; set; }
-        public ICollection<Book> MyBooks { get; set; } = new HashSet<Book>();
+        public IList<Book> Books { get; set; }
     }
 }

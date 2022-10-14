@@ -4,14 +4,16 @@ using Library.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Library.Data.Migrations
 {
     [DbContext(typeof(LibraryDbContext))]
-    partial class LibraryDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221014173018_EditUserIdToNullable")]
+    partial class EditUserIdToNullable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -88,7 +90,7 @@ namespace Library.Data.Migrations
             modelBuilder.Entity("Library.Data.Models.Book", b =>
                 {
                     b.HasOne("Library.Data.Models.User", "User")
-                        .WithMany("Books")
+                        .WithMany("MyBooks")
                         .HasForeignKey("UserId");
 
                     b.Navigation("User");
@@ -96,7 +98,7 @@ namespace Library.Data.Migrations
 
             modelBuilder.Entity("Library.Data.Models.User", b =>
                 {
-                    b.Navigation("Books");
+                    b.Navigation("MyBooks");
                 });
 #pragma warning restore 612, 618
         }
