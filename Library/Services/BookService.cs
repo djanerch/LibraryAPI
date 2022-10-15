@@ -110,6 +110,8 @@ namespace Library.Api.Services
                 item.Overdue = true;
             }
 
+            context.SaveChanges();
+
             var booksWithOverdue = list.Select(x => new BookWithReaderId()
             {
                 Header = x.Header,

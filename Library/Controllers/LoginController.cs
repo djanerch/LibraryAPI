@@ -17,8 +17,6 @@ namespace Library.Api.Controllers
     [ApiController]
     public class LoginController : Controller
     {
-        private IConfiguration config;
-        private LibraryDbContext context;
         private ILoginService loginService;
 
         public LoginController(ILoginService loginService)

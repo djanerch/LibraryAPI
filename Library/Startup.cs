@@ -40,6 +40,7 @@ namespace Library.Api
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<ILoginService, LoginService>();
             services.AddTransient<IRegisterService, RegisterService>();
+            services.AddTransient<IProfileService, ProfileService>();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                .AddJwtBearer(options =>
