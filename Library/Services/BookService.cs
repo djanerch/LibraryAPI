@@ -37,9 +37,9 @@ namespace Library.Api.Services
             context.SaveChanges();
         }
 
-        public IEnumerable<BookApiModel> AllBooks(BookFilter filter)
+        public JsonResult AllBooks(BookFilter filter)
         {
-            return context
+            var list = context
                 .Books
                 .Where(x => x.Pages >= filter.FromPages && x.Pages <= filter.ToPages 
                 && x.Header.Contains(filter.Header) && x.IsFree == filter.IsFree)
@@ -50,6 +50,12 @@ namespace Library.Api.Services
                     Pages = x.Pages
                 })
                 .ToList();
+
+            var jsonResult = new JsonResult();
+
+            jsonResult.BuildBooks(list, filter.Page);
+
+            return jsonResult;
         }
 
         public string RemoveBookByName(string header)

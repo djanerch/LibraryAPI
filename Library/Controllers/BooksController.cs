@@ -15,14 +15,15 @@ namespace Library.Api.Controllers
             service = _service;
         }
         [HttpGet]
-        public IEnumerable<BookApiModel> GetBooks(string header = "", bool isFree = true, int fromPages = 0, int toPages = 400)
+        public JsonResult GetBooks(string header = "", bool isFree = true, int fromPages = 0, int toPages = 400, int page = 1)
         {
             BookFilter filter = new BookFilter()
             {
                 Header = header,
                 IsFree = isFree,
                 FromPages = fromPages,
-                ToPages = toPages
+                ToPages = toPages,
+                Page = page
             };
 
             return service.AllBooks(filter);

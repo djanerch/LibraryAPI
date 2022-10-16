@@ -12,6 +12,8 @@ namespace Library.Data.Models
         public string Header { get; set; }
         [StringLength(maximumLength: 4000)]
         public string Description { get; set; }
+        [StringLength(maximumLength: 100)]
+        public string Author { get; set; }
         public int Pages { get; set; }
         public int Rating { get; set; }
         public bool IsFree { get; set; } = true;

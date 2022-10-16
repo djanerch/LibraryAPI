@@ -1,10 +1,5 @@
 ﻿using Library.Api.Services.Contracts;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Library.Api.Controllers
 {
@@ -19,7 +14,7 @@ namespace Library.Api.Controllers
         }
 
         [HttpGet]
-        public JsonResult Get(int page = 1)
+        public JsonResult AllProfiles(int page = 1)
         {
             return profileService.GetAllProfilesInfo(page);
         }

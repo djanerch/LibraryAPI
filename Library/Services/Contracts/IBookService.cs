@@ -6,7 +6,7 @@ namespace Library.Api.Services.Contracts
     public interface IBookService
     {
         void AddNewBook(BookDto book);
-        IEnumerable<BookApiModel> AllBooks(BookFilter filter);
+        JsonResult AllBooks(BookFilter filter);
         string RemoveBookByName(string header);
         string TakeBookByName(string header, UserModel user);
         IEnumerable<BookWithReaderId> CheckBooks();
