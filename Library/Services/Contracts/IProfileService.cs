@@ -5,5 +5,6 @@ namespace Library.Api.Services.Contracts
     public interface IProfileService
     {
         PersonalProfileInfo GetProfileInfo(UserModel user);
+        JsonResult GetAllProfilesInfo(int page);
     }
 }

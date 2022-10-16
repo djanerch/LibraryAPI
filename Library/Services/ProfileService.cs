@@ -39,5 +39,27 @@ namespace Library.Api.Services
 
             return profileInfo;
         }
+
+        public JsonResult GetAllProfilesInfo(int page)
+        {
+            var result = new JsonResult();
+
+            var collection = context.Users.Select(x => new AllProfileInfo()
+            {
+                Username = x.Name,
+                Books = context.Books
+                .Where(s => s.UserId == x.Id)
+                .Select(x => new BookWithHeader
+                {
+                    Header = x.Header
+                })
+                .ToList()
+            })
+            .ToList();
+
+            result.BuildProfiles(collection, page);
+
+            return result;
+        }
     }
 }
