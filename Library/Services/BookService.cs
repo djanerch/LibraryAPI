@@ -27,7 +27,8 @@ namespace Library.Api.Services
                 Header = book.Header,
                 Description = book.Description,
                 Pages = book.Pages,
-                Rating = book.Rating
+                Rating = book.Rating,
+                Author = book.Author
             };
 
             newBook.UserId = null;
@@ -63,11 +64,15 @@ namespace Library.Api.Services
             var book = context.Books.FirstOrDefault(x => x.Header == header);
             if (book != null)
             {
+                if (book.IsFree == false)
+                {
+                    return "This book is busy at now.";
+                }
                 context.Books.Remove(book);
 
                 context.SaveChanges();
 
-                return $"Book with header: {header} is removed from library";
+                return $"Book with header: {header} is removed from library.";
             }
             return "Book does't exist in library.";
         }

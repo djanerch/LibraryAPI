@@ -11,6 +11,7 @@ using Library.Api.Services.Contracts;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Library.Api.Extensions;
 
 namespace Library.Api
 {
@@ -69,6 +70,8 @@ namespace Library.Api
             }
 
             app.UseHttpsRedirection();
+
+            app.PrepareDatabase();
 
             app.UseRouting();
 

@@ -10,6 +10,7 @@ namespace Library.Api.Models
         [Required]
         [StringLength(maximumLength: 4000)]
         public string Description { get; set; }
+        public string Author { get; set; }
         public int Pages { get; set; }
         public int Rating { get; set; }
     }
