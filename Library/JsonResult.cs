@@ -9,7 +9,7 @@ namespace Library.Api
     public class JsonResult
     {
         private int allPages;
-        private int taked = 2;
+        private int taked = 10;
         public int Count { get; set; }
         public string Next { get; set; }
         public string Previous { get; set; }

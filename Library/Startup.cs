@@ -1,16 +1,16 @@
-using Library.Api.Services;
-using Library.Api.Services.Contracts;
+using System.Text;
 using Library.Data;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Library.Api.Services;
+using Microsoft.OpenApi.Models;
+using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Library.Api.Services.Contracts;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
-using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace Library.Api
 {
