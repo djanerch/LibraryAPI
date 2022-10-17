@@ -1,10 +1,7 @@
 ﻿using Library.Api.Models;
 using Library.Api.Services.Contracts;
 using Library.Data;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Library.Api.Services
 {
