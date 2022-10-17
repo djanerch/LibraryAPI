@@ -155,7 +155,7 @@ namespace Library.Api.Services
                     return $"You successfully give back book with header: {header}";
                     //TODO: decrement user points if overdue is true
                 }
-                return "You don't have this book in your collection fo books!";
+                return "You don't have this book in your collection of books!";
             }
             return "You are not logged.";
         }

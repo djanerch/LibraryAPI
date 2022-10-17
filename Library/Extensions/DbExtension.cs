@@ -27,7 +27,22 @@ namespace Library.Api.Extensions
                     Name = "Admin",
                     Email = WebConstants.AdminEmail,
                     Role = WebConstants.AdminRole,
-                    Password = Hash.sha256("admin_password")
+                    Password = Hash.sha256(WebConstants.AdminPassword)
+                };
+
+                context.Users.Add(user);
+
+                context.SaveChanges();
+            }
+
+            if (context.Users.FirstOrDefault(x => x.Email == WebConstants.ReaderEmail) == null)
+            {
+                var user = new User()
+                {
+                    Name = "Reader",
+                    Email = WebConstants.ReaderEmail,
+                    Role = WebConstants.ReaderRole,
+                    Password = Hash.sha256(WebConstants.ReaderPassword)
                 };
 
                 context.Users.Add(user);
