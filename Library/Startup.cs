@@ -1,6 +1,7 @@
 using System.Text;
 using Library.Data;
 using Library.Api.Services;
+using Library.Api.Extensions;
 using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Builder;
@@ -11,7 +12,6 @@ using Library.Api.Services.Contracts;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Library.Api.Extensions;
 
 namespace Library.Api
 {

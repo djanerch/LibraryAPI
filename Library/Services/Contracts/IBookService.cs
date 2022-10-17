@@ -10,5 +10,6 @@ namespace Library.Api.Services.Contracts
         string RemoveBookByName(string header);
         string TakeBookByName(string header, UserModel user);
         IEnumerable<BookWithReaderId> CheckBooks();
+        string GiveBackBookByName(string header, UserModel user);
     }
 }

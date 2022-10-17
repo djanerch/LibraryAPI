@@ -17,7 +17,7 @@ namespace Library.Api.Services
         }
         public void AddNewBook(BookDto book)
         {
-            if (context.Books.FirstOrDefault(x=> x.Header == book.Header) != null)
+            if (context.Books.FirstOrDefault(x => x.Header == book.Header) != null)
             {
                 return;
             }
@@ -42,7 +42,7 @@ namespace Library.Api.Services
         {
             var list = context
                 .Books
-                .Where(x => x.Pages >= filter.FromPages && x.Pages <= filter.ToPages 
+                .Where(x => x.Pages >= filter.FromPages && x.Pages <= filter.ToPages
                 && x.Header.Contains(filter.Header) && x.IsFree == filter.IsFree)
                 .Select(x => new BookApiModel
                 {
@@ -133,6 +133,31 @@ namespace Library.Api.Services
             });
 
             return booksWithOverdue;
+        }
+
+        public string GiveBackBookByName(string header, UserModel user)
+        {
+            var dbUser = context.Users.FirstOrDefault(x => x.Email == user.EmailAddress && x.Name == user.Username);
+
+            if (dbUser != null)
+            {
+                var book = context.Books.FirstOrDefault(x => x.UserId == dbUser.Id && x.Header == header);
+
+                if (book != null)
+                {
+                    book.IsFree = true;
+                    book.UserId = null;
+                    book.Overdue = false;
+                    book.LastDateForGiveBack = new DateTime();
+
+                    context.SaveChanges();
+
+                    return $"You successfully give back book with header: {header}";
+                    //TODO: decrement user points if overdue is true
+                }
+                return "You don't have this book in your collection fo books!";
+            }
+            return "You are not logged.";
         }
     }
 }
