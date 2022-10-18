@@ -27,3 +27,13 @@ To run API
 1. Open Visual Studio
 2. Click `CTRL + F5` or press the button shown in the image to start
 <img src="https://user-images.githubusercontent.com/96980908/196473526-a8034784-897a-4d68-a8d7-432492b221a9.png" height = "500" alt=""/>
+3. Now api working on url: https://localhost:5001
+4. You can use my postman test collection to test API
+link for postman collection: https://www.postman.com/collections/5e2285318951d0980114
+
+## Getting started
+
+* I will use postman for demonstration
+* Let's make our first API request to the Library API!
+
+<img src="https://user-images.githubusercontent.com/96980908/196476881-282cc732-b8af-4576-b2fc-e9ffc9bae36d.png" alt=""/>
