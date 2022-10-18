@@ -36,8 +36,18 @@ link for postman collection: https://www.postman.com/collections/5e2285318951d09
 * Let's make our first API request to the Library API!
 * I will use postman for demonstration
 
+* Request to home page
+
 request:
 <img src="https://user-images.githubusercontent.com/96980908/196477349-d49334d5-6aa1-4864-be2c-8fa584b08a76.png" alt=""/>
 
 response:
 <img src="https://user-images.githubusercontent.com/96980908/196477999-6ce457ab-96da-4190-b7a0-ae9855d2c2b3.png" alt=""/>
+
+* Request to books page
+
+request:
+<img src="https://user-images.githubusercontent.com/96980908/196478953-a0a5edb2-26b7-4ceb-96ca-d2b5bf5d5174.png" alt=""/>
+
+response:
+<img src="https://user-images.githubusercontent.com/96980908/196479278-7743f715-da0c-47d8-8d11-87bbe56bf87e.png" alt=""/>
