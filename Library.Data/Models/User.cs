@@ -18,6 +18,7 @@ namespace Library.Data.Models
         public string Email { get; set; }
         public string Password { get; set; }
         public string Role { get; set; }
+        public int Points { get; set; } = 10;
         public IList<Book> Books { get; set; }
     }
 }
