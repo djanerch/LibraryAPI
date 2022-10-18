@@ -19,6 +19,11 @@ namespace Library.Api.Controllers
         [HttpPost]
         public IActionResult Register(RegisterModel registerModel)
         {
+            if (!ModelState.IsValid)
+            {
+                return Content("Invalid model state");
+            }
+
             return Content(service.Register(registerModel));
         }
     }

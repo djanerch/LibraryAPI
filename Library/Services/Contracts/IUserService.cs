@@ -6,5 +6,6 @@ namespace Library.Api.Services.Contracts
     public interface IUserService
     {
         UserModel GetCurrentUser(HttpContext httpContext);
+        string AddPointsToUser(UserWithNameAndPoints user);
     }
 }

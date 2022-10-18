@@ -21,6 +21,11 @@ namespace Library.Api.Controllers
         [HttpPost]
         public IActionResult TakeBook(BookWithHeader book)
         {
+            if (!ModelState.IsValid)
+            {
+                return Content("Invalid model state");
+            }
+
             var user = userService.GetCurrentUser(HttpContext);
             if (userService.GetCurrentUser(HttpContext).Role == "Reader")
             {

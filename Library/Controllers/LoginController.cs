@@ -19,6 +19,11 @@ namespace Library.Api.Controllers
         [HttpPost]
         public IActionResult Login([FromBody] UserLogin login)
         {
+            if (!ModelState.IsValid)
+            {
+                return Content("Invalid model state");
+            }
+
             IActionResult response = Unauthorized();
             var user = loginService.AuthenticateUser(login);
 
