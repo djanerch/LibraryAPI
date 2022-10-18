@@ -33,7 +33,7 @@ link for postman collection: https://www.postman.com/collections/5e2285318951d09
 
 ## Getting started
 
-* I will use postman for demonstration
 * Let's make our first API request to the Library API!
+* I will use postman for demonstration
 
-<img src="https://user-images.githubusercontent.com/96980908/196476881-282cc732-b8af-4576-b2fc-e9ffc9bae36d.png" alt=""/>
+<img src="https://user-images.githubusercontent.com/96980908/196476881-282cc732-b8af-4576-b2fc-e9ffc9bae36d.png" height="40" width="100" alt=""/>
