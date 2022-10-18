@@ -64,3 +64,26 @@ request:
 
 response:
 <img src="https://user-images.githubusercontent.com/96980908/196484245-cd97e4f8-6112-43ee-a95e-ebb8d8903ad6.png" alt=""/>
+
+* Тhese are only a small part of all possible requests. You can see all posible requests at the next point.
+
+## All posible endpoints:mailbox_with_mail:
+
+* For admins
+`https://localhost:5001/api/checkbooks`
+`https://localhost:5001/api/addbook`
+`https://localhost:5001/api/removebook`
+`https://localhost:5001/api/addpointstouser`
+
+* For users
+`https://localhost:5001/api/takebook`
+`https://localhost:5001/api/givebackbook`
+
+* For both
+`https://localhost:5001/api/books?header=string&isFree=true&fromPages=0&toPages=400&page=1`
+`https://localhost:5001/api/books?page=1`
+`https://localhost:5001/api/myprofile`
+`https://localhost:5001/api/allprofiles`
+`https://localhost:5001/api/`
+`https://localhost:5001/api/login`
+`https://localhost:5001/api/register`
