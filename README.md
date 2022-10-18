@@ -57,10 +57,18 @@ request:
 response:
 <img src="https://user-images.githubusercontent.com/96980908/196479278-7743f715-da0c-47d8-8d11-87bbe56bf87e.png" alt=""/>
 
-* Request to books page `with` filter
+* Request to books page `with` filter - first page
 
 request:
-<img src="" alt=""/>
+<img src="https://user-images.githubusercontent.com/96980908/196483845-bc4f90bd-e935-4f72-bc71-16f546363dbf.png" alt=""/>
 
 response:
-<img src="" alt=""/>
+<img src="https://user-images.githubusercontent.com/96980908/196484245-cd97e4f8-6112-43ee-a95e-ebb8d8903ad6.png" alt=""/>
+
+* second page
+
+request:
+<img src="https://user-images.githubusercontent.com/96980908/196484604-63cc3031-8654-4d06-8c96-bd3dd0c8dace.png" alt=""/>
+
+response:
+<img src="" alt="https://user-images.githubusercontent.com/96980908/196484834-5a2e09c9-a6fc-48cc-bd8f-33d86ab50c40.png"/>
