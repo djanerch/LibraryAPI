@@ -31,6 +31,16 @@ To run API
 4. You can use my postman test collection to test API
 link for postman collection: https://www.postman.com/collections/5e2285318951d0980114
 
+## Roles
+
+* Reader
+* Admn
+
+Library API have default profiles for reader and admin
+you can use them
+
+<img src="https://user-images.githubusercontent.com/96980908/196482243-3273a1be-125c-48c1-9060-f4108e519f2f.png" alt=""/>
+
 ## Getting started
 
 * Let's make our first API request to the Library API!
