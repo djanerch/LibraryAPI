@@ -94,6 +94,11 @@ namespace Library.Api.Services
                     return "You can't get more than 3 books at one time";
                 }
 
+                if (dbUser.Points <= 0)
+                {
+                    return "You don't have enought points.";
+                }
+
                 dbUser.Books.Add(book);
 
                 book.IsFree = false;
@@ -145,6 +150,15 @@ namespace Library.Api.Services
 
                 if (book != null)
                 {
+                    if (book.Overdue == true)
+                    {
+                        dbUser.Points -= 3;
+                    }
+                    else
+                    {
+                        dbUser.Points += 1;
+                    }
+
                     book.IsFree = true;
                     book.UserId = null;
                     book.Overdue = false;

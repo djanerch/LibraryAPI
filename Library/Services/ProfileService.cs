@@ -25,6 +25,7 @@ namespace Library.Api.Services
                 Username = dbUser.Name,
                 Email = dbUser.Email,
                 Role = dbUser.Role,
+                Points = dbUser.Points,
                 Books = context.Books
                 .Where(x => x.UserId == dbUser.Id)
                 .Select(x => new BookWithHeader
