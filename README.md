@@ -40,5 +40,4 @@ request:
 <img src="https://user-images.githubusercontent.com/96980908/196477349-d49334d5-6aa1-4864-be2c-8fa584b08a76.png" alt=""/>
 
 response:
-<img src="https://user-images.githubusercontent.com/96980908/196477999-6ce457ab-96da-4190-b7a0-ae9855d2c2b3.png
-" alt=""/>
+<img src="https://user-images.githubusercontent.com/96980908/196477999-6ce457ab-96da-4190-b7a0-ae9855d2c2b3.png" alt=""/>
