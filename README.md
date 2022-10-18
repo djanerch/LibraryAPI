@@ -1,11 +1,6 @@
 # Jupiter Library🚀:cyclone:
 ## The project represent online Library.
 
-## Endpoints
-* `LibraryApi includes all books which you can filter`
-
-* `If you registered in library you're default role is Reader that means you can take books`
-
 ## 🗹Prerequisites
 
 Before you begin, ensure you have met the following requirements:
@@ -31,7 +26,7 @@ To run API
 4. You can use my postman test collection to test API
 link for postman collection: https://www.postman.com/collections/5e2285318951d0980114
 
-## Roles
+## Roles:star:
 
 * Reader
 * Admn
@@ -41,7 +36,7 @@ you can use them
 
 <img src="https://user-images.githubusercontent.com/96980908/196482243-3273a1be-125c-48c1-9060-f4108e519f2f.png" alt=""/>
 
-## Getting started
+## Getting started:zap:
 
 * Let's make our first API request to the Library API!
 * I will use postman for demonstration
@@ -54,10 +49,18 @@ request:
 response:
 <img src="https://user-images.githubusercontent.com/96980908/196477999-6ce457ab-96da-4190-b7a0-ae9855d2c2b3.png" alt=""/>
 
-* Request to books page
+* Request to books page `without` filter
 
 request:
 <img src="https://user-images.githubusercontent.com/96980908/196478953-a0a5edb2-26b7-4ceb-96ca-d2b5bf5d5174.png" alt=""/>
 
 response:
 <img src="https://user-images.githubusercontent.com/96980908/196479278-7743f715-da0c-47d8-8d11-87bbe56bf87e.png" alt=""/>
+
+* Request to books page `with` filter
+
+request:
+<img src="" alt=""/>
+
+response:
+<img src="" alt=""/>
