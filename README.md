@@ -26,7 +26,7 @@ To run API
 4. You can use my postman test collection to test API
 link for postman collection: https://www.postman.com/collections/5e2285318951d0980114
 
-## Roles:star:
+## :star:Roles
 
 * Reader
 * Admn
@@ -36,7 +36,7 @@ you can use them
 
 <img src="https://user-images.githubusercontent.com/96980908/196482243-3273a1be-125c-48c1-9060-f4108e519f2f.png" alt=""/>
 
-## Getting started:zap:
+## :zap:Getting started
 
 * Let's make our first API request to the Library API!
 * I will use postman for demonstration
@@ -67,7 +67,7 @@ response:
 
 * Тhese are only a small part of all possible requests. You can see all posible requests at the next point.
 
-## All posible endpoints:mailbox_with_mail:
+## :mailbox_with_mail:All posible endpoints
 
 * For admins
 `https://localhost:5001/api/checkbooks`
