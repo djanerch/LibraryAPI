@@ -1,4 +1,4 @@
-# Jupiter Library🚀:cyclone:
+# Jupiter Library🚀
 ## The project represent online Library.
 
 ## 🗹Prerequisites
